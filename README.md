@@ -1,14 +1,23 @@
-
-# Wasm Zone
+# 0KNetwork's boomerangd
 
 [![CircleCI](https://circleci.com/gh/CosmWasm/wasmd/tree/main.svg?style=shield)](https://circleci.com/gh/CosmWasm/wasmd/tree/main)
 [![codecov](https://codecov.io/gh/cosmwasm/wasmd/branch/main/graph/badge.svg)](https://codecov.io/gh/cosmwasm/wasmd)
 [![Go Report Card](https://goreportcard.com/badge/github.com/CosmWasm/wasmd)](https://goreportcard.com/report/github.com/CosmWasm/wasmd)
 [![license](https://img.shields.io/github/license/CosmWasm/wasmd.svg)](https://github.com/CosmWasm/wasmd/blob/main/LICENSE)
 [![LoC](https://tokei.rs/b1/github/CosmWasm/wasmd)](https://github.com/CosmWasm/wasmd)
-<!-- [![GolangCI](https://golangci.com/badges/github.com/CosmWasm/wasmd.svg)](https://golangci.com/r/github.com/CosmWasm/wasmd) -->
 
-This repository hosts `Wasmd`, the first implementation of a cosmos zone with wasm smart contracts enabled.
+What is 0KN boomerangd?
+
+
+0KNetwork is a next generation decentralized and incentivized metadata-private mixnet-based anonymous broadcast network with cryptographic security guarantees, a decentralized privacy network infrastructure that is designed to preserve user anonymity in the face of an adversary monitoring the entire network and while assuming a fraction of all network servers are malicious. It leverages the next generation state-of-the-art mixnet based metadata-private anonymous broadcast Trellis.
+
+In short, boomerangd are binaries for the network's validators and smart contracts.
+
+This repository is a direct fork of `wasmd` but tailored for our implementation. It hosts `boomerangd`, an implementation of a cosmos zone with wasm smart contracts enabled.
+
+This code was forked from the `cosmos/gaia` repository as a basis and then we added `x/wasm` and cleaned up many gaia-specific files. However, the `boomerangd` binary should function just like `gaiad` except for the addition of the `x/wasm` module.
+
+... (rest of the content remains unchanged) ...
 
 This code was forked from the `cosmos/gaia` repository as a basis and then we added `x/wasm` and cleaned up 
 many gaia-specific files. However, the `wasmd` binary should function just like `gaiad` except for the
